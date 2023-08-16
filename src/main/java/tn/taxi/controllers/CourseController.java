@@ -21,7 +21,7 @@ import tn.taxi.entities.Course;
 import tn.taxi.entities.Log;
 import tn.taxi.services.CourseService;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/course")
 public class CourseController {

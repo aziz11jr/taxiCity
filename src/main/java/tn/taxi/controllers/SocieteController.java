@@ -19,7 +19,7 @@ import tn.taxi.entities.Course;
 import tn.taxi.entities.Societe;
 import tn.taxi.services.SocieteService;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/societe")
 public class SocieteController {

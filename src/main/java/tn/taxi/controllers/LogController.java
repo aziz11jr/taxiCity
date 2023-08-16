@@ -18,7 +18,7 @@ import tn.taxi.entities.Log;
 import tn.taxi.repositories.LogRepository;
 import tn.taxi.services.LogService;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/log")
 public class LogController {

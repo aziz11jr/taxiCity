@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import tn.taxi.entities.Taxi;
 import tn.taxi.services.TaxiService;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/taxi")
 public class TaxiController {

@@ -21,7 +21,7 @@ import tn.taxi.services.MyLogDetailsService;
 
 
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 //@CrossOrigin
 public class JwtAuthenticationController {
