@@ -70,6 +70,8 @@ public class WebSecurityConfig  {
 							 	.requestMatchers("/taxi/**").permitAll()
 							 	.requestMatchers("/client/**").permitAll()
 							 	.requestMatchers("/societe/**").permitAll()
+								.requestMatchers("/h2-console/**").permitAll()
+
 							 	
 							 	.anyRequest().authenticated()
                                  //.and().formLogin().loginPage("/login").permitAll()
@@ -84,7 +86,8 @@ public class WebSecurityConfig  {
                   				// make sure we use stateless session; session won't be used to
                   				// store user's state.
                   				  sessionManagement()
-                  				 .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+                  				 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+				.and().headers().frameOptions().disable();
                                  
                                  
 		// Add a filter to validate the tokens with every request
