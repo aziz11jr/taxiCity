@@ -29,9 +29,7 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Table(name="Taxi", uniqueConstraints = {
-        @UniqueConstraint(columnNames = {"numTaxi"})
-})
+@Table(name="Taxi")
 //@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,property = "NumTaxi")
 
 public class Taxi implements Serializable {
